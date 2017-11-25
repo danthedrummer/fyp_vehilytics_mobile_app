@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Vehilytics</string>
+    <string name="email_field_placeholder">Email</string>
+    <string name="password_field_placeholder">Password</string>
+    <string name="register_button_label">Register</string>
+    <string name="login_button_label">Login</string>
+    <string name="vehicle_health_button_header">Vehicle Issues</string>
+    <string name="vehicle_health_button_subtext">There is 1 issue that needs attention</string>
+    <string name="analytics_button_header">Analytics</string>
+    <string name="analytics_button_subtext">Get an overview of your vehicle status</string>
+    <string name="reminders_button_header">Reminders</string>
+    <string name="reminders_button_subtext">Manage reminders for maintenance tasks</string>
+    <string name="symbol_finder_button_header">Symbol Finder</string>
+    <string name="symbol_finder_button_subtext">Discover the meaning of symbols in your vehicle</string>
+    <string name="settings_menu_option">Settings</string>
+    <string name="preferences_menu_option">Preferences</string>
+    <string name="logout_menu_option">Log out</string>
+    <string name="preferences_discard_button">Discard</string>
+    <string name="preferences_save_button">Save</string>
+    <string name="preference_name_warnings">Warnings</string>
+    <string name="preference_name_analytics">Analytics</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+</resources>

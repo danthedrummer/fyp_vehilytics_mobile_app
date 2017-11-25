@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ddowney.vehilytics.activities.HomeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@color/colorIcons"
+        android:elevation="4dp"
+        android:theme="@style/Theme.AppCompat.NoActionBar"
+        app:popupTheme="@style/PopupMenuStyle"
+        app:title="Home"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/vehicle_health_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/home_screen_button_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_health_button_header"
+                    style="@style/home_screen_headers"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vehicle_health_button_subtext"
+                    style="@style/home_screen_subtext" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/health_separator"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                style="@style/divider_style"
+                tools:ignore="PxUsage"/>
+
+            <LinearLayout
+                android:id="@+id/analytics_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/home_screen_button_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/analytics_button_header"
+                    style="@style/home_screen_headers"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/analytics_button_subtext"
+                    style="@style/home_screen_subtext" />
+            </LinearLayout>
+
+            <View
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                style="@style/divider_style"
+                tools:ignore="PxUsage"/>
+
+            <LinearLayout
+                android:id="@+id/reminders_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/home_screen_button_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reminders_button_header"
+                    style="@style/home_screen_headers"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reminders_button_subtext"
+                    style="@style/home_screen_subtext" />
+            </LinearLayout>
+
+            <View
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                style="@style/divider_style"
+                tools:ignore="PxUsage"/>
+
+            <LinearLayout
+                android:id="@+id/symbols_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                style="@style/home_screen_button_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symbol_finder_button_header"
+                    style="@style/home_screen_headers"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/symbol_finder_button_subtext"
+                    style="@style/home_screen_subtext" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

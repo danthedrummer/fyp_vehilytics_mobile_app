@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.ddowney.vehilytics.activities.IssuesActivity">
+    tools:context="com.ddowney.vehilytics.activities.SymbolsActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toolbar"
@@ -16,12 +15,16 @@
         android:elevation="4dp"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         app:popupTheme="@style/PopupMenuStyle"
-        app:title="Issues"/>
+        app:title="Symbols"/>
 
     <ListView
-        android:id="@+id/issues_list_view"
+        android:id="@+id/symbols_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:footerDividersEnabled="true"/>
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/main_toolbar"
+        android:focusable="false"
+        android:clickable="false"
+        android:listSelector="#00000000"/>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

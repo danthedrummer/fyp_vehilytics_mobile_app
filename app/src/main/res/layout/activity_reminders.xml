@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.ddowney.vehilytics.activities.IssuesActivity">
+    tools:context="com.ddowney.vehilytics.activities.RemindersActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/main_toolbar"
@@ -16,12 +15,21 @@
         android:elevation="4dp"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         app:popupTheme="@style/PopupMenuStyle"
-        app:title="Issues"/>
+        app:title="Reminders"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/add_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="@style/fab_style"/>
 
     <ListView
-        android:id="@+id/issues_list_view"
+        android:id="@+id/reminder_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:footerDividersEnabled="true"/>
+        app:layout_constraintTop_toBottomOf="@id/main_toolbar"/>
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>
