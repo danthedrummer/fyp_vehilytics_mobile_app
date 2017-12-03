@@ -26,6 +26,8 @@
         app:layout_constraintRight_toRightOf="parent"
         style="@style/fab_style"/>
 
+
+
     <ListView
         android:id="@+id/reminder_list_view"
         android:layout_width="match_parent"

@@ -4,9 +4,11 @@ import com.ddowney.vehilytics.adapters.SymbolListAdapter
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.view.Menu
 import android.view.MenuItem
 import com.ddowney.vehilytics.R
+import com.ddowney.vehilytics.godObject.User
 import kotlinx.android.synthetic.main.activity_symbols.*
 import com.ddowney.vehilytics.models.SymbolInformation
 
@@ -37,7 +39,7 @@ class SymbolsActivity : AppCompatActivity() {
         val symbolAdapter = SymbolListAdapter(this, symbols)
 
         symbols_list_view.adapter = symbolAdapter
-        symbols_list_view.divider = resources.getDrawable(R.drawable.simple_list_divider)
+        symbols_list_view.divider = ContextCompat.getDrawable(this, R.drawable.simple_list_divider)
         symbols_list_view.dividerHeight = 2
     }
 
@@ -56,6 +58,7 @@ class SymbolsActivity : AppCompatActivity() {
 
             R.id.logout_menu_option -> {
                 // clear user login data
+                User.logout()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 true

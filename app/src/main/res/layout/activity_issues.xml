@@ -8,7 +8,7 @@
     tools:context="com.ddowney.vehilytics.activities.IssuesActivity">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/main_toolbar"
+        android:id="@+id/analytics_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"

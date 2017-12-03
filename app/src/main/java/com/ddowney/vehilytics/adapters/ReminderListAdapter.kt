@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.reminder_detail_row.view.*
 
 /**
  * Created by Dan on 25/11/2017.
+ * Adapter for the reminders activity list
  */
 class ReminderListAdapter(internal val context: Context, private val reminders : List<ReminderDetails>)
     : ArrayAdapter<ReminderDetails>(context, R.layout.symbol_info_row, reminders) {

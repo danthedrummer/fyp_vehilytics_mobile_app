@@ -21,4 +21,11 @@
     <string name="preference_name_analytics">Analytics</string>
     <string name="edit">Edit</string>
     <string name="delete">Delete</string>
+    <string name="battery_graph_title">Battery Voltage</string>
+    <string name="refresh_menu_action">Refresh</string>
+    <string name="name_field_placeholder">Name</string>
+    <string name="confirm_password_placeholder">Confirm Password</string>
+    <string name="device_id_placeholder">Device Id</string>
+    <string name="vehicle_manufacturer_placeholder">Vehicle Manufacturer</string>
+    <string name="sensor_symbol_image_description">Sensor Symbol</string>
 </resources>

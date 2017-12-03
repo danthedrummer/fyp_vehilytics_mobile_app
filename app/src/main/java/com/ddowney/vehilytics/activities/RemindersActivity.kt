@@ -3,6 +3,7 @@ package com.ddowney.vehilytics.activities
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
@@ -11,6 +12,7 @@ import android.widget.AdapterView
 import android.widget.Toast
 import com.ddowney.vehilytics.R
 import com.ddowney.vehilytics.adapters.ReminderListAdapter
+import com.ddowney.vehilytics.godObject.User
 import com.ddowney.vehilytics.models.ReminderDetails
 import kotlinx.android.synthetic.main.activity_reminders.*
 
@@ -39,7 +41,7 @@ class RemindersActivity : AppCompatActivity() {
         val reminderAdapter = ReminderListAdapter(this, sampleReminders)
 
         reminder_list_view.adapter = reminderAdapter
-        reminder_list_view.divider = resources.getDrawable(R.drawable.simple_list_divider)
+        reminder_list_view.divider = ContextCompat.getDrawable(this, R.drawable.simple_list_divider)
         reminder_list_view.dividerHeight = 2
 
         registerForContextMenu(reminder_list_view)
@@ -64,6 +66,7 @@ class RemindersActivity : AppCompatActivity() {
 
             R.id.logout_menu_option -> {
                 // clear user login data
+                User.logout()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 true

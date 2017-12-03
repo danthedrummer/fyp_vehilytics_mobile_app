@@ -12,6 +12,7 @@ import kotlinx.android.synthetic.main.symbol_info_row.view.*
 
 /**
  * Created by Dan on 25/11/2017.
+ * Adapter for the symbol finder activity list
  */
 class SymbolListAdapter(internal val context: Context, private val symbols : List<SymbolInformation>)
     : ArrayAdapter<SymbolInformation>(context, R.layout.symbol_info_row, symbols) {
@@ -19,7 +20,7 @@ class SymbolListAdapter(internal val context: Context, private val symbols : Lis
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
         val symbol = symbols[position]
-        var newView : View
+        val newView : View
 
         newView = if (convertView == null) {
             val inflater = LayoutInflater.from(context)

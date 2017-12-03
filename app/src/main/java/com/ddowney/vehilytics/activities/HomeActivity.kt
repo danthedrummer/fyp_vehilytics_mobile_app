@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import com.ddowney.vehilytics.R
+import com.ddowney.vehilytics.godObject.User
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
@@ -55,6 +56,7 @@ class HomeActivity : AppCompatActivity() {
 
             R.id.logout_menu_option -> {
                 // clear user login data
+                User.logout()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
                 true
